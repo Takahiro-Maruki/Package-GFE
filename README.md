@@ -39,7 +39,7 @@ II. Make a file showing a nucleotide read quartet separated by slashes at each p
 
 Make_InFile.cpp.
       
-- Make an input file showing the name of the reference file (made in step 1), number of individuals in the analysis, names of the individual pro files, and individual IDs. See the example file (In_MIF.txt).
+- Make an input file showing the name of the reference file (made in step I), number of individuals in the analysis, names of the individual pro files, and individual IDs. See the example file (In_MIF.txt).
 - The order of the individual IDs needs to correspond to that of the names of the individual profiles in the input file.
 - Compile the program by the following command:
 
@@ -49,7 +49,7 @@ g++ Make_InFile.cpp -o Make_InFile -lm
 
 ./Make_InFile $(< In_MIF.txt)
       
-III. To make the input file for the genotype-frequency estimator, combine the reference file (made in step 1) and individual files (made in step 2) together using the UNIX command paste:
+III. To make the input file for the genotype-frequency estimator, combine the reference file (made in step I) and individual files (made in step II) together using the UNIX command paste:
 
 paste reference_file_name In_GFE_*.txt > In_GFE.txt
       
