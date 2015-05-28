@@ -82,6 +82,7 @@ For a copy of the GNU General Public License write to the Free Software Foundati
 
 
 Contact
+
 If you have difficulty using this software, please send the following information to Takahiro Maruki (tmaruki@indiana.edu):
 
 1. Brief explanation of the problem.
