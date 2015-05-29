@@ -1,9 +1,11 @@
 # Package-GFE
-May 28, 2015
+May 29, 2015
 
 Author: Takahiro Maruki
 
 Software package of the genotype-frequency estimator (GFE)
+
+**This pacakge can be downloaded by clicking "Download ZIP" on this web site.**
 
 This software package is for estimating allele and genotype frequencies from nucleotide read quartets (read counts of A, C, G, and T) derived from individual high-throughput sequencing data for multiple diploid individuals from a population by a maximum-likelihood (ML) method. For each site, ML estimates are obtained for the allele frequencies (under the assumption of no more than two alleles per site, these are by definition the two most abundant nucleotides in the population sample), error rate (due to all sources of error, not simply base quality), and disequilibrium/inbreeding coefficient. From the allele frequency and disequilibrium/inbreeding coefficient estimates, the program also estimates genotype frequencies. The statistical significance of the polymorphisms and their genotypic deviations from Hardy-Weinberg equilibrium (HWE) can also be tested, using the likelihood-ratio test statistics, with this software.
 
