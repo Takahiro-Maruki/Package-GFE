@@ -301,7 +301,6 @@ int main(int argc, char *argv[])
 					}
 					// Estimate the disequilibrium coefficient by a grid search
 					size_grid_D_A = 1.0/(double)nsample;
-					// printf("size_grid_D_A: %f\n", size_grid_D_A);
 					if ( -pow(best_p,2.0) >= -pow(1.0-best_p,2.0) ) {
 						mlD_Amin = -pow(best_p,2.0);
 					} else {
