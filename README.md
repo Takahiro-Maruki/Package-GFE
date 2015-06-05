@@ -70,7 +70,7 @@ Below are the specific procedures for using the software package:
 
   ./GFE -in My_in_GFE.txt -out My_out_GFE.txt
       
-  - The input file of the LD estimator (Maruki and Lynch 2014) can be prepared by specifying the 'l' mode.  For         example, to prepare a file named My_out_l_GFE.txt from an input file named My_in_GFE.txt for the LD analysis, type    the following:
+  - The input file of the LD estimator (Maruki and Lynch 2014) can be prepared by specifying the \"l\" mode.  For         example, to prepare a file named My_out_l_GFE.txt from an input file named My_in_GFE.txt for the LD analysis, type    the following:
 
   ./GFE -in My_in_GFE.txt -mode l -out My_out_l_GFE.txt
       
