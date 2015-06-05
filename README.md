@@ -42,7 +42,7 @@ Below are the specific procedures for using the software package:
   Make_InFile.cpp.
       
   - Make an input file showing the name of the reference file (made in step 1), number of individuals in the analysis,   names of the individual pro files, and individual IDs. See the example file (In_MIF.txt).
-  - The order of the individual IDs needs to correspond to that of the names of the individual profiles in the input    file.
+  - The order of the individual IDs needs to correspond to that of the names of the individual pro files in the input    file.
   - Compile the program by the following command:
 
   g++ Make_InFile.cpp -o Make_InFile -lm
