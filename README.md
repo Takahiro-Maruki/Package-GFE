@@ -66,7 +66,7 @@ Below are the specific procedures for using the software package:
 
   ./GFE
       
-  - The names of the input and output files can be specified.  Their default names are In_GFE.txt and Out_GFE.txt,      respectively.  For example, to make an output file named My_out_GFE.txt from an input file named My_in_GFE.txt ,      type the following:
+  - The names of the input and output files can be specified.  Their default names are In_GFE.txt and Out_GFE.txt,      respectively.  For example, to make an output file named My_out_GFE.txt from an input file named My_in_GFE.txt,       type the following:
 
   ./GFE -in My_in_GFE.txt -out My_out_GFE.txt
       
