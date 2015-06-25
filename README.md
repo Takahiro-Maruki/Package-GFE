@@ -77,8 +77,8 @@ Below are the specific procedures for using the software package:
   - The output file in the l mode is conditioned on significant polymorphism, and is a tab-delimited text file, where   10 columns on the information on the site are followed by individual read quartets at each site.  The meanings of
   the first 10 columns are as follows: 1) scaffold (chromosome) identifier; 2) site identifier (coordinate); 3)
   nucleotide of the reference sequence; 4, 5) nucleotides of major and minor alleles (1:A, 2:C, 3:G, and 4:T); 6)
-  depth of coverage in the population sample (sum of the coverage over the individuals); 7) ML estimates of the major
-  allele frequency;  8) ML estimates of the error rate; 9) likelihood-ratio test statistic for polymorphism; 10)
+  depth of coverage in the population sample (sum of the coverage over the individuals); 7) ML estimate of the major
+  allele frequency;  8) ML estimate of the error rate; 9) likelihood-ratio test statistic for polymorphism; 10)
   likelihood-ratio test statistic for HWE deviation.  The chi-square critical value for the polymorphism test can be    specified by adding the `-cv value' option to the command line, where value is the particular value specified.  The
   default critical value is 5.991 (at the 5% level).
 
