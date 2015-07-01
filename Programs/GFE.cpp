@@ -271,8 +271,8 @@ int main(int argc, char *argv[])
 				if (den_best_p == 0.0) {
 					fprintf(stderr, "ML estimates not found at site %d on %s\n", site, scaffold.c_str());
 					if (s_mode == "f") {
-						fprintf(outstream, "%s\t%d\t%s\tNA\tNA\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage);
-						// printf("%s\t%d\t%s\tNA\tNA\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage);
+						fprintf(outstream, "%s\t%d\t%s\tNA\tNA\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage);
+						// printf("%s\t%d\t%s\tNA\tNA\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage);
 					}
 				} else {
 					best_error = 1.5*(ml_pop_read[3]/(double)pop_coverage);
@@ -555,15 +555,15 @@ int main(int argc, char *argv[])
                                                 		} else {
                                                         		best_mac = (int)(2.0*nsample*best_q);
                                                 		}
-								fprintf(outstream, "%s\t%d\t%s\t%s\tNA\t%d\t%f\t%d\t%d\t%d\t%f\t%f\t%f\t%f\tNA\tNA\tNA\t%f\t%f\t%f\t%f\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), major_allele.c_str(), pop_coverage, Nc, Nr, best_Mac, best_mac, best_p, best_q, best_error, null_best_error, best_P, best_H, best_Q, best_h);
-								// printf("%s\t%d\t%s\t%s\tNA\t%d\t%f\t%d\t%d\t%d\t%f\t%f\t%f\t%f\tNA\tNA\tNA\t%f\t%f\t%f\t%f\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), major_allele.c_str(), pop_coverage, Nc, Nr, best_Mac, best_mac, best_p, best_q, best_error, null_best_error, best_P, best_H, best_Q, best_h);
+								fprintf(outstream, "%s\t%d\t%s\t%s\tNA\t%d\t%f\t%d\t%d\t%d\t%f\t%f\t%f\t%f\tNA\tNA\t%f\t%f\t%f\t%f\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), major_allele.c_str(), pop_coverage, Nc, Nr, best_Mac, best_mac, best_p, best_q, best_error, null_best_error, best_P, best_H, best_Q, best_h);
+								// printf("%s\t%d\t%s\t%s\tNA\t%d\t%f\t%d\t%d\t%d\t%f\t%f\t%f\t%f\tNA\tNA\t%f\t%f\t%f\t%f\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), major_allele.c_str(), pop_coverage, Nc, Nr, best_Mac, best_mac, best_p, best_q, best_error, null_best_error, best_P, best_H, best_Q, best_h);
 							}
 						}
 					} else {	// ML estimates not found
 						fprintf(stderr, "ML estimates not found at site %d on %s\n", site, scaffold.c_str());
 						if (s_mode == "f") {
-							fprintf(outstream, "%s\t%d\t%s\tNA\tNA\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage);
-							// printf("%s\t%d\t%s\tNA\tNA\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage);
+							fprintf(outstream, "%s\t%d\t%s\tNA\tNA\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage);
+							// printf("%s\t%d\t%s\tNA\tNA\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage);
 						}
 					}	  
 				}  	
@@ -600,15 +600,15 @@ int main(int argc, char *argv[])
 					best_H = 0.0;
 					best_Q = 0.0;
 					best_h = 0.0;
-					fprintf(outstream, "%s\t%d\t%s\t%s\tNA\t%d\t%f\t%d\t%d\t%d\t%f\t%f\t%f\t%f\tNA\tNA\tNA\t%f\t%f\t%f\t%f\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), major_allele.c_str(), pop_coverage, Nc, Nr, best_Mac, best_mac, best_p, best_q, best_error, null_best_error, best_P, best_H, best_Q, best_h);
-					// printf("%s\t%d\t%s\t%s\tNA\t%d\t%f\t%d\t%d\t%d\t%f\t%f\t%f\t%f\tNA\tNA\tNA\t%f\t%f\t%f\t%f\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), major_allele.c_str(), pop_coverage, Nc, Nr, best_Mac, best_mac, best_p, best_q, best_error, null_best_error, best_P, best_H, best_Q, best_h);
+					fprintf(outstream, "%s\t%d\t%s\t%s\tNA\t%d\t%f\t%d\t%d\t%d\t%f\t%f\t%f\t%f\tNA\tNA\t%f\t%f\t%f\t%f\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), major_allele.c_str(), pop_coverage, Nc, Nr, best_Mac, best_mac, best_p, best_q, best_error, null_best_error, best_P, best_H, best_Q, best_h);
+					// printf("%s\t%d\t%s\t%s\tNA\t%d\t%f\t%d\t%d\t%d\t%f\t%f\t%f\t%f\tNA\tNA\t%f\t%f\t%f\t%f\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), major_allele.c_str(), pop_coverage, Nc, Nr, best_Mac, best_mac, best_p, best_q, best_error, null_best_error, best_P, best_H, best_Q, best_h);
 				}
 			}
 		} else {
 			// Print out the reference-sequence information when there is no data only for the f mode
 			if (s_mode == "f") {
-				fprintf(outstream, "%s\t%d\t%s\tNA\tNA\t%d\t%f\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage, Nc, Nr);
-				// printf("%s\t%d\t%s\tNA\tNA\t%d\t%f\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage, Nc, Nr);
+				fprintf(outstream, "%s\t%d\t%s\tNA\tNA\t%d\t%f\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage, Nc, Nr);
+				// printf("%s\t%d\t%s\tNA\tNA\t%d\t%f\t%d\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\n", scaffold.c_str(), site, ref_nuc.c_str(), pop_coverage, Nc, Nr);
 			}
 		}		
 	}
