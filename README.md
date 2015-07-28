@@ -19,7 +19,7 @@ This software package is for estimating allele and genotype frequencies from nuc
 
 If you use this software, please cite the following paper:
 
-Maruki, T., and Lynch, M., Genotype-frequency estimation from high-throughput sequencing data. (in revision).
+Maruki, T., and Lynch, M., (2015) Genotype-frequency estimation from high-throughput sequencing data. *Genetics* (in press).
 
 **Instructions**
 
